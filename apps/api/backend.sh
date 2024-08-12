@@ -53,7 +53,7 @@ API_TOKEN_SALT=$API_TOKEN_SALT \
 ADMIN_JWT_SECRET=$ADMIN_JWT_SECRET \
 JWT_SECRET=$JWT_SECRET \
 TRANSFER_TOKEN_SALT=$TRANSFER_TOKEN_SALT \
-APP_BASE=packages/backend \
+APP_BASE=apps/api \
 --app cbend &
 spin
 echo "Environment variables set!"
