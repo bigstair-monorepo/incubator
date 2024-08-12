@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_sliders",
+  "info": {
+    "displayName": "Slider",
+    "icon": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "resolutions": {
+    "wrap-ansi": "7.0.0",
+    "string-width": "4.1.0"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.20.4",
+    "@strapi/plugin-documentation": "^4.24.3",
+    "@strapi/plugin-i18n": "4.20.4",
+    "@strapi/plugin-seo": "^1.9.8",
+    "@strapi/plugin-users-permissions": "4.20.4",
+    "@strapi/strapi": "^4.24.3",
+    "better-sqlite3": "^11.1.2",
+    "bindings": "^1.5.0",
+    "pg": "^8.12.0",
+    "pg-connection-string": "^2.6.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "sqlite3": "^5.1.7",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "Khanya Kupelo"
+  },
+  "strapi": {
+    "uuid": "0f95dc7c-202b-4ab2-a874-3799d23b1640"
+  },
+  "engines": {
+    "node": ">=18.17.0 <=20.x.x",
+    "yarn": ">=1.22.0 <3.0.0"
+  },
+  "license": "MIT"
+}

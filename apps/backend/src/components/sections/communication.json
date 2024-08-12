@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sections_communications",
+  "info": {
+    "displayName": "communication",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Subheading": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "displayName": "SliderCard",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.slider-card"
+    },
+    "SliderCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.slider-card"
+    }
+  }
+}
