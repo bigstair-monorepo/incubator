@@ -1,1 +1,1 @@
-web: yarn workspace api start
+api: yarn workspace api start
