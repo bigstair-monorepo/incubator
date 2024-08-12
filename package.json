@@ -20,5 +20,9 @@
     "eslint-config-bigstair": "*",
     "prettier": "2.5.1",
     "turbo": "1.2.12"
+  },
+  "engines": {
+    "node": ">=18.x",
+    "yarn": ">=1.22.x"
   }
 }
