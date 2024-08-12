@@ -36,5 +36,9 @@
   "strapi": {
     "uuid": "0f95dc7c-202b-4ab2-a874-3799d23b1640"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+      "node": ">=18.17.0 <=20.x.x",
+      "yarn": ">=1.22.0 <3.0.0"
+    }
 }

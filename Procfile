@@ -1,0 +1,1 @@
+api: node --version && yarn --version && yarn workspace api start
