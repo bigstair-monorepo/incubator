@@ -10,6 +10,7 @@ export default function Logo({
 }) {
   return (
     <Link
+      passHref
       href="/"
       aria-label="Back to homepage"
       className="flex items-center p-2"
