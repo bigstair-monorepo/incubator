@@ -13,7 +13,10 @@ import {FALLBACK_SEO} from "@utils/constants";
 async function getGlobal(lang: string): Promise<any> {
   const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
 
-  if (!token) throw new Error("The Strapi API Token environment variable is not set.");
+  if (!token) {
+    console.log('Missing token')
+    throw new Error("The Strapi API Token environment variable is not set.");
+  }
 
   const path = `/global`;
   const options = { headers: { Authorization: `Bearer ${token}` } };
@@ -33,13 +36,15 @@ async function getGlobal(lang: string): Promise<any> {
     ],
     locale: lang,
   };
+
+  console.log({options})
   return await fetchAPI(path, urlParamsObject, options);
 }
 
 export async function generateMetadata({ params } : { params: {lang: string}}): Promise<Metadata> {
   const meta = await getGlobal(params.lang);
 
-  if (!meta.data) return FALLBACK_SEO;
+  if (!meta?.data) return FALLBACK_SEO;
 
   const { metadata, favicon } = meta.data.attributes;
   const { url } = favicon.data.attributes;
