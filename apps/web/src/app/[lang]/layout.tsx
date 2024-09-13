@@ -14,7 +14,6 @@ async function getGlobal(lang: string): Promise<any> {
   const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
 
   if (!token) {
-    console.log('Missing token')
     throw new Error("The Strapi API Token environment variable is not set.");
   }
 
@@ -37,7 +36,6 @@ async function getGlobal(lang: string): Promise<any> {
     locale: lang,
   };
 
-  console.log({options})
   return await fetchAPI(path, urlParamsObject, options);
 }
 

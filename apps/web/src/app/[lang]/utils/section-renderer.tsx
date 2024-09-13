@@ -7,7 +7,6 @@ import Hero from '@organisms/Hero';
 
 export function sectionRenderer (section: any, index: number) {
   
-  console.log(section)
   //  REVIEW - retrieve from db
 const details = "CNS is the leading marketplace for mining supplies and services where you can find experts for any project, with any budget, and on any timeline. With over 500 categories of services you can enjoy high-quality deliveries that impress every time."
 
