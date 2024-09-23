@@ -13,7 +13,6 @@
     "changeset-create": "changeset",
     "changeset-apply": "changeset version",
     "release": "turbo run build && changeset publish",
-    "heroku-postbuild": "yarn install"
   },
   "devDependencies": {
     "@changesets/cli": "2.22.0",
