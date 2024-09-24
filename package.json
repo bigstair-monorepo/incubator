@@ -23,9 +23,9 @@
   },
   "engines": {
     "node": "18.x",
-    "yarn": "1.22.18"
+    "yarn": "1.22.22"
   },
   "resolutions": {
-    "yarn": "1.22.18"
+    "yarn": "1.22.22"
   }
 }
