@@ -25,5 +25,7 @@
     "node": "18.x",
     "yarn": "1.22.18"
   },
-  "version": "v1.22.18"
+  "resolutions": {
+    "yarn": "1.22.18"
+  }
 }
